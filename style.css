@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.btn,.score{
+    font-family: 'Outfit', sans-serif;
+    font-size: 30px;
+    margin:50px;
+    border: 2px solid rgb(65, 132, 110);
+    border-radius:10px;
+    height:30vh;
+    width: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    background-color: aquamarine;
+}
