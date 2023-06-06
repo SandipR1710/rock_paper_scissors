@@ -38,15 +38,17 @@ rock.addEventListener('click',function(e){
     playRound(playerSelection, computerSelection);
     count++;
     if(count===5){
-        setTimeout(function(){
-            if(score>2){
-                alert('You won!');
-            }
-            else{
-                alert('You lose!');
-            }
-            window.location.reload()
-          },200)
+        const winner=document.querySelector('.btext');
+        if(score>2){
+            winner.textContent='You win!';
+        }
+        else{
+            winner.textContent='You Lose!';
+        }
+        // setTimeout(function(){
+            
+        //     window.location.reload()
+        //   },500)
     }
 });
 const paper=document.querySelector('#paper');
@@ -56,15 +58,17 @@ paper.addEventListener('click',function(e){
     playRound(playerSelection, computerSelection);
     count++;
     if(count==5){
-        setTimeout(function(){
-            if(score>2){
-                alert('You won!');
-            }
-            else{
-                alert('You lose!');
-            }
-            window.location.reload()
-          },200)
+        const winner=document.querySelector('.btext');
+        if(score>2){
+            winner.textContent='You win!';
+        }
+        else{
+            winner.textContent='You Lose!';
+        }
+        // setTimeout(function(){
+            
+        //     window.location.reload()
+        //   },500)
     }
 });
 const Scissors=document.querySelector('#scissors');
@@ -74,14 +78,20 @@ Scissors.addEventListener('click',function(e){
     playRound(playerSelection, computerSelection);
     count++;
     if(count==5){
-        setTimeout(function(){
-            if(score>2){
-                alert('You won!');
-            }
-            else{
-                alert('You lose!');
-            }
-            window.location.reload()
-          },200)
+        const winner=document.querySelector('.btext');
+        if(score>2){
+            winner.textContent='You win!';
+        }
+        else{
+            winner.textContent='You Lose!';
+        }
+        // setTimeout(function(){
+            
+        //     window.location.reload()
+        //   },500)
     }
+});
+const p=document.querySelector('.pbtn');
+p.addEventListener('click',function(e){
+    window.location.reload();
 });

@@ -2,22 +2,56 @@
     margin: 0;
     padding: 0;
 }
-body{
+/* body{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items:center;
+} */
+.game{
+    display: flex;
+    flex-direction: column;
 }
-.btn,.score{
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.score,.btn,.btext,.pbtn{
     font-family: 'Outfit', sans-serif;
     font-size: 30px;
-    margin:50px;
+    margin:15px;
     border: 2px solid rgb(65, 132, 110);
     border-radius:10px;
-    height:30vh;
-    width: 30vh;
     display: flex;
     align-items: center;
     justify-content:center ;
     background-color: aquamarine;
+}
+.pbtn{
+    padding:0 20px 0 20px;
+}
+.bottom,.lbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btext{
+    width:50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.score{
+    height:30vh;
+    width: 100vh;
+}
+.btn{
+    height:30vh;
+    width: 30vh;
 }
